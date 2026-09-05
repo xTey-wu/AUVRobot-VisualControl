@@ -1,0 +1,13 @@
+names:
+- doorframe
+- topleft
+- topright
+- lowright
+- lowleft
+- red_circle
+- blue_circle
+- guideline
+nc: 8
+path: ../dataset
+train: train/images
+val: val/images

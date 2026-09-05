@@ -1,0 +1,69 @@
+{
+  "evaluation_date": "2026-09-04",
+  "final_runtime_model": {
+    "file": "models/combine1014.pt",
+    "size_bytes": 19175386,
+    "sha256": "9e66aa5697ee17968602e9855076b754e60d26f3e16837cf2cf8acef044bbc4e"
+  },
+  "classes": [
+    "doorframe",
+    "topleft",
+    "topright",
+    "lowright",
+    "lowleft",
+    "red_circle",
+    "blue_circle",
+    "guideline"
+  ],
+  "independent_annotated_test_set": {
+    "available_in_repository": false,
+    "metrics_computable": false,
+    "reason": "The snapshot contains no independent image manifest, no YOLO test labels, and no provenance showing that the two test images were excluded from training and tuning.",
+    "missing_for_valid_evaluation": [
+      "independent raw images or videos",
+      "YOLO-format bounding-box labels for all test images",
+      "grouped split or provenance manifest proving source-video separation",
+      "test image count and ground-truth instance count"
+    ]
+  },
+  "training_period_validation_only": [
+    {
+      "run": "runs/train/yolov11s_custom",
+      "epoch": 100,
+      "precision": 0.9895,
+      "recall": 0.98627,
+      "map50": 0.99398,
+      "map50_95": 0.77693
+    },
+    {
+      "run": "runs/train/yolov11s_custom_augfirst",
+      "epoch": 100,
+      "precision": 0.99098,
+      "recall": 0.99343,
+      "map50": 0.99497,
+      "map50_95": 0.88885
+    }
+  ],
+  "local_unannotated_smoke_test": {
+    "image_count": 2,
+    "predicted_box_count": 20,
+    "confidence_threshold": 0.25,
+    "image_size": 640,
+    "timed_repeats_per_image": 10,
+    "device": "cpu",
+    "overall_wall_time_mean_ms": 2488.82,
+    "overall_wall_time_median_ms": 2431.622,
+    "overall_wall_time_p95_ms": 2981.908,
+    "accuracy_claim_allowed": false
+  },
+  "repository_historical_runtime_logs": {
+    "log_files": 4,
+    "timed_inferences_after_first_sample_exclusion": 2566,
+    "mean_ms": 11.298,
+    "median_ms": 11.014,
+    "p95_ms": 13.049,
+    "median_reciprocal_fps": 90.79,
+    "samples_over_100_ms": 1,
+    "hardware_identified": false
+  }
+}

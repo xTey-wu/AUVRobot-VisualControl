@@ -1,0 +1,323 @@
+{
+  "scope": "unannotated repository images; deployment smoke test, not accuracy evaluation",
+  "model": {
+    "file": "combine1014.pt",
+    "sha256": "9e66aa5697ee17968602e9855076b754e60d26f3e16837cf2cf8acef044bbc4e",
+    "classes": {
+      "0": "doorframe",
+      "1": "topleft",
+      "2": "topright",
+      "3": "lowright",
+      "4": "lowleft",
+      "5": "red_circle",
+      "6": "blue_circle",
+      "7": "guideline"
+    },
+    "load_ms": 259.7173329995712
+  },
+  "settings": {
+    "device": "cpu",
+    "image_size": 640,
+    "confidence_threshold": 0.25,
+    "warmup_runs": 1,
+    "timed_repeats_per_image": 10
+  },
+  "environment": {
+    "platform": "macOS-27.0-x86_64-i386-64bit",
+    "machine": "x86_64",
+    "python": "3.11.6",
+    "torch": "2.2.2",
+    "ultralytics": "8.4.138",
+    "opencv": "4.11.0",
+    "mps_available": false
+  },
+  "images": [
+    {
+      "file": "239.jpg",
+      "width": 1133,
+      "height": 850,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "doorframe",
+          "confidence": 0.947132,
+          "bbox_xyxy": [
+            362.2,
+            183.91,
+            823.14,
+            577.47
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "doorframe",
+          "confidence": 0.930274,
+          "bbox_xyxy": [
+            505.76,
+            289.57,
+            679.34,
+            427.58
+          ]
+        },
+        {
+          "class_id": 7,
+          "class_name": "guideline",
+          "confidence": 0.874305,
+          "bbox_xyxy": [
+            591.11,
+            538.16,
+            665.11,
+            585.59
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "topright",
+          "confidence": 0.844941,
+          "bbox_xyxy": [
+            776.08,
+            200.3,
+            824.62,
+            256.03
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "topleft",
+          "confidence": 0.841177,
+          "bbox_xyxy": [
+            385.96,
+            183.75,
+            433.06,
+            225.73
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "lowright",
+          "confidence": 0.83739,
+          "bbox_xyxy": [
+            742.0,
+            516.05,
+            790.61,
+            568.32
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "lowleft",
+          "confidence": 0.80109,
+          "bbox_xyxy": [
+            506.94,
+            395.39,
+            534.3,
+            423.69
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "lowleft",
+          "confidence": 0.800574,
+          "bbox_xyxy": [
+            360.68,
+            440.34,
+            416.65,
+            495.05
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "topright",
+          "confidence": 0.757944,
+          "bbox_xyxy": [
+            655.66,
+            300.74,
+            681.88,
+            329.65
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "topleft",
+          "confidence": 0.741407,
+          "bbox_xyxy": [
+            509.37,
+            291.64,
+            538.87,
+            318.41
+          ]
+        }
+      ],
+      "detection_count": 10,
+      "class_counts": {
+        "doorframe": 2,
+        "guideline": 1,
+        "lowleft": 2,
+        "lowright": 1,
+        "topleft": 2,
+        "topright": 2
+      },
+      "wall_time": {
+        "mean_ms": 2607.7985082010855,
+        "median_ms": 2653.524646004371,
+        "p95_ms": 3059.571584002697,
+        "min_ms": 2238.8540410029236,
+        "max_ms": 3059.571584002697
+      },
+      "framework_inference_time": {
+        "mean_ms": 2567.0367710030405,
+        "median_ms": 2623.620125508751,
+        "p95_ms": 3001.044709002599,
+        "min_ms": 2190.3446250071283,
+        "max_ms": 3001.044709002599
+      }
+    },
+    {
+      "file": "443.jpg",
+      "width": 1133,
+      "height": 850,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "doorframe",
+          "confidence": 0.936386,
+          "bbox_xyxy": [
+            837.65,
+            331.2,
+            1038.81,
+            503.73
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "doorframe",
+          "confidence": 0.915524,
+          "bbox_xyxy": [
+            454.34,
+            233.97,
+            1132.47,
+            846.7
+          ]
+        },
+        {
+          "class_id": 7,
+          "class_name": "guideline",
+          "confidence": 0.886666,
+          "bbox_xyxy": [
+            838.11,
+            648.45,
+            927.61,
+            723.38
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "topright",
+          "confidence": 0.868926,
+          "bbox_xyxy": [
+            1049.45,
+            193.69,
+            1111.58,
+            255.67
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "lowleft",
+          "confidence": 0.86272,
+          "bbox_xyxy": [
+            520.51,
+            732.17,
+            584.09,
+            794.51
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "topleft",
+          "confidence": 0.854893,
+          "bbox_xyxy": [
+            439.49,
+            308.75,
+            496.9,
+            365.82
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "topright",
+          "confidence": 0.827723,
+          "bbox_xyxy": [
+            987.14,
+            329.89,
+            1022.79,
+            362.24
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "lowleft",
+          "confidence": 0.809461,
+          "bbox_xyxy": [
+            855.52,
+            471.41,
+            888.73,
+            501.98
+          ]
+        },
+        {
+          "class_id": 3,
+          "class_name": "lowright",
+          "confidence": 0.80885,
+          "bbox_xyxy": [
+            1004.92,
+            469.24,
+            1040.89,
+            501.72
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "topleft",
+          "confidence": 0.757494,
+          "bbox_xyxy": [
+            832.55,
+            351.24,
+            868.12,
+            383.59
+          ]
+        }
+      ],
+      "detection_count": 10,
+      "class_counts": {
+        "doorframe": 2,
+        "guideline": 1,
+        "lowleft": 2,
+        "lowright": 1,
+        "topleft": 2,
+        "topright": 2
+      },
+      "wall_time": {
+        "mean_ms": 2369.8418415995548,
+        "median_ms": 2346.6582289984217,
+        "p95_ms": 2732.216125004925,
+        "min_ms": 2131.088374997489,
+        "max_ms": 2732.216125004925
+      },
+      "framework_inference_time": {
+        "mean_ms": 2344.495104200905,
+        "median_ms": 2321.7741455009673,
+        "p95_ms": 2697.8721670020605,
+        "min_ms": 2106.7496670002583,
+        "max_ms": 2697.8721670020605
+      }
+    }
+  ],
+  "overall_wall_time": {
+    "mean_ms": 2488.82017490032,
+    "median_ms": 2431.622457996127,
+    "p95_ms": 2981.9083330075955,
+    "min_ms": 2131.088374997489,
+    "max_ms": 3059.571584002697
+  }
+}

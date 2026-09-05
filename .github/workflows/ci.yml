@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check Python syntax
+        run: python -m compileall -q main.py train.py src tools
+
+      - name: Validate evaluation JSON
+        run: |
+          python -m json.tool evaluation/summary.json > /dev/null
+          python -m json.tool evaluation/inference_details.json > /dev/null
+
+      - name: Verify packaged model
+        run: echo "9e66aa5697ee17968602e9855076b754e60d26f3e16837cf2cf8acef044bbc4e  models/combine1014.pt" | sha256sum -c -
